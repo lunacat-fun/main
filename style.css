@@ -1047,3 +1047,53 @@ footer {
         padding: 20px;
     }
 }
+
+/* Добавьте этот код в ваш существующий CSS файл */
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #ff3366, #ff6633);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(255, 51, 102, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 12px rgba(255, 51, 102, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(255, 51, 102, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 12px rgba(255, 51, 102, 0.3);
+    }
+}
+
+/* Обновляем позиционирование для заголовка продукта */
+.product-header {
+    position: relative;
+    padding-right: 80px;
+}
+
+.product-card[data-category="executor"] {
+    border-top: 3px solid #ff3366;
+}
+
+.product-card[data-category="executor"] .buy-btn {
+    background: linear-gradient(135deg, #ff3366, #ff6633);
+}
+
+.product-card[data-category="executor"] .buy-btn:hover {
+    background: linear-gradient(135deg, #ff2255, #ff5522);
+    box-shadow: 0 8px 25px rgba(255, 51, 102, 0.4);
+}
+
